@@ -48,9 +48,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  @override
-  Widget build(BuildContext context) {
-    Widget buildRecipeCard(Recipe recipe) {
+  Widget buildRecipeCard(Recipe recipe) {
       return Card(
         child: Column(
           children: <Widget>[
@@ -59,7 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         )
       );
-    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
     //
     return Scaffold(
       appBar: AppBar(
